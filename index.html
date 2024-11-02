@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Number Catching</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="card">
+      <h2>Number Catching Game</h2>
+      <div class="players">
+        <button class="playerone active">player one</button>
+        <button class="playertwo">player two</button>
+      </div>
+      <div class="formbox">
+        <div class="video">
+            <h2 class="winstatus"></h2>
+            <video src="winer.mp4" controls="controls" autoplay="autoplay" loop="loop" muted="muted"></video>
+        </div>
+          <form class="form playerformone">
+            <input type="number" class="playeroneinput" placeholder="Type any number under 10"  min="1" max="9"/>
+             <span class="statusone"></span>
+            <button type="submit" class="playeronebtn playersubmitbtn">
+              Submit
+            </button>
+          </form>
+          <form class="form playerformtwo">
+            <input type="number" class="playertwoinput" placeholder="Type any number under 10"  min="1" max="5"/>
+            <span class="statustwo"></span>
+            <button type="submit" class="playetwobtn playersubmitbtn">
+              Submit
+            </button>
+          </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
