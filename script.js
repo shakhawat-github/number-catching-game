@@ -25,8 +25,8 @@ video.style.display = "none";
 let winstatus = document.querySelector(".winstatus");
 
 playeronebtn.addEventListener("click", () => {
-  if (!playeroneinput.value) {
-    inputstatusone.innerHTML = "Please input any number.";
+  if (!playeroneinput.value || playeroneinput.value == 0) {
+    inputstatusone.innerHTML = "Input must be 1-9";
     inputstatusone.style.color = "#ff0000";
     inputstatusone.style.fontSize = "14px";
   }
@@ -46,8 +46,8 @@ playeronebtn.addEventListener("click", () => {
 });
 
 playertwobtn.addEventListener("click", () => {
-  if (!playertwoinput.value) {
-    inputstatustwo.innerHTML = "Please input any number.";
+  if (!playertwoinput.value || playertwoinput.value == 0) {
+    inputstatustwo.innerHTML = "Input must be 1-9";
     inputstatustwo.style.color = "#ff0000";
     inputstatustwo.style.fontSize = "14px";
   }
