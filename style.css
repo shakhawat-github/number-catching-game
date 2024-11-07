@@ -15,6 +15,19 @@ body {
   justify-content: center;
   align-items: center;
 }
+.reset{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 1em;
+  padding: 10px;
+  border: none;
+  width: 100%;
+  height: 50px;
+  border-radius: 15px;
+  background: linear-gradient(90deg, #003a74, #006ad5);
+  color: white;
+}
 .card {
   width: auto;
   height: auto;
@@ -126,7 +139,7 @@ body {
 .video{
     position: relative;
     width: 100%;
-    height: 100%;
+    height: 60%;
     z-index: 1;
 }
 .video video{
@@ -135,7 +148,7 @@ body {
 }
 .video h2{
     position: absolute;
-    top: 20%;
+    top: 5%;
     left: 28%;
 }
 .video::after{
